@@ -457,21 +457,37 @@
             <use href="./img/sprates.svg#icon-close-black"></use>
           </svg>
         </button>
-          <form class="model-user" autocomplete="on" novalidate></form>
-          <b class="model-title">Оставьте свои данные, мы вам перезвоним</b>
 
-          
-            <label class="user-info" for="">Имя</label>
-            <input type="text" name="" id="" />
+          <form class="model-user" name="model-user" autocomplete="on" novalidate>
+            <b class="model-title">Оставьте свои данные, мы вам перезвоним</b>
 
-            <label class="user-info" for="">Телефон</label>
-            <input type="tel" name="" id="" />
+            <label class="user-info" for="name">
+              <span class="input">Имя</span>
+            </label>
+            <input class="model-imput" type="text" name="name" id="name" autofocus />
 
-            <label class="user-info" for="">Почта</label>
-            <input type="email" name="" id="" />
+            <label class="user-info" for="tel">
+              <span class="input">Телефон</span>
+            </label>
+            <input class="model-imput" type="tel" name="tel" id="tel" />
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
+            <label class="user-info" for="email">
+              <span class="input">Почта</span>
+            </label>
+            <input class="model-imput" type="email" name="email" id="email" />
+
+               <span class="input">Комментарий</span>
+            <textarea class="model-imput" name="comment" id="comment" placeholder="Введите текст" rows="5"></textarea>
+          </form>
+
+            <div class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="agreement" id="agreement">
+              <label class="agreement" for="agreement">Соглашаюсь с рассылкой и принимаю <a class="contract" href="">Условия договора</a></label>
+            </div>
+
+            <button class="submit-btn" type="submit">Отправить</button>
+            
+         
       </div>
     <script src="./js/modal.js"></script>
   </body>

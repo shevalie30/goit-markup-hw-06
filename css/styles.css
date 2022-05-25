@@ -268,11 +268,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   padding: 40px;
-
-  display: flex;
-  flex-direction: column;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -298,16 +294,82 @@ ul {
   cursor: var(--cursor);
 }
 
+.model-user {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-bottom: 20px;
+}
+
 .model-title {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 0.86;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.model-imput {
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.model-imput:not(:last-child) {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-left: 9px;
+
+  color: #757575;
+}
+
+.user-info {
+  margin-bottom: 4px;
+}
+
+.input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  color: #757575;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-input {
+  align-content: center;
+}
+
+.contract {
+  color: #2196f3;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+
+  width: 200px;
+  height: 50px;
 }
 
 /* кнопка галиреи */

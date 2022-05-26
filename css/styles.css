@@ -298,7 +298,6 @@ ul {
   display: flex;
   flex-direction: column;
   width: 448px;
-  margin-bottom: 20px;
 }
 
 .model-title {
@@ -318,9 +317,20 @@ ul {
   border-radius: 4px;
 }
 
+.model-tex {
+  margin: 0;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
 .model-imput:not(:last-child) {
   margin-bottom: 10px;
   height: 40px;
+}
+
+.model-iconc {
 }
 
 .agreement {

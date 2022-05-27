@@ -294,11 +294,11 @@ ul {
   cursor: var(--cursor);
 }
 
-.model-user {
+/* .model-user {
   display: flex;
   flex-direction: column;
   width: 448px;
-}
+} */
 
 .model-title {
   display: block;
@@ -311,26 +311,27 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.model-imput {
+.model-input {
+  width: 100%;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
 }
 
 .model-tex {
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: transparent;
 }
 
-.model-imput:not(:last-child) {
+.model-input:not(:last-child) {
   margin-bottom: 10px;
   height: 40px;
-}
-
-.model-iconc {
 }
 
 .agreement {
@@ -344,10 +345,19 @@ ul {
 }
 
 .user-info {
-  margin-bottom: 4px;
+  display: block;
+  position: relative;
+}
+
+.model-iconc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .input {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;

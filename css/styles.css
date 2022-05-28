@@ -314,6 +314,7 @@ ul {
 .model-input {
   width: 100%;
   margin: 0;
+  padding: 10px 35px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -347,22 +348,23 @@ ul {
 .user-info {
   display: block;
   position: relative;
+  margin-bottom: 4px;
 }
 
 .model-iconc {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 28px;
+  left: 12px;
 }
 
 .input {
   display: block;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
 
   color: #757575;
 }

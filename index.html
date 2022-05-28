@@ -415,6 +415,9 @@
             </ul>
           </address>
         </div>
+
+        <!-- присоединяйтесь -->
+
         <div class="footer-iconc">
           <h2 class="footer-title">присоединяйтесь</h2>
           <ul class="footer-list-iconc">
@@ -448,8 +451,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- рассылка -->
+
+        <div class="mailing list">
+          <form>
+            <label for="">
+              <span class="">Подпишитесь на рассылку</span>
+            </label>
+            <input type="text" />
+            <button class="submit">
+              <p>Подписаться</p>
+              <svg width="24px" height="24px">
+                <use href="./img/sprates.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- наталка -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="model-btn">
         <button class="close-btn" data-modal-close>
@@ -458,49 +481,62 @@
           </svg>
         </button>
 
-          <strong class="model-title">Оставьте свои данные, мы вам перезвоним</strong>
+        <strong class="model-title">Оставьте свои данные, мы вам перезвоним</strong>
 
-          <form class="model-user" name="model-user" autocomplete="on" novalidate>
-
-            <label class="user-info" for="name">
-              <span class="input">Имя</span>
-            </label>
-            <input class="model-input" type="text" name="name" id="name" autofocus />
-            <svg class="model-iconc" width="18px" height="18px">
+        <form class="model-user" name="model-user" autocomplete="on" novalidate>
+          <label class="user-info" for="name">
+            <span class="input"
+              >Имя
+              <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-name"></use>
               </svg>
+            </span>
+          </label>
+          <input class="model-input" type="text" name="name" id="name" autofocus />
 
-            <label class="user-info" for="tel">
-              <span class="input">Телефон</span>
-            </label>
-            <input class="model-input" type="tel" name="tel" id="tel" />
-            <svg class="model-iconc" width="18px" height="18px">
+          <label class="user-info" for="tel">
+            <span class="input"
+              >Телефон
+              <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-tel"></use>
               </svg>
+            </span>
+          </label>
+          <input class="model-input" type="tel" name="tel" id="tel" />
 
-            <label class="user-info" for="email">
-              <span class="input">Почта</span>
-            </label>
-            <input class="model-input" type="email" name="email" id="email" />
-            <svg class="model-iconc" width="18px" height="18px">
+          <label class="user-info" for="email">
+            <span class="input"
+              >Почта
+              <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-email"></use>
               </svg>
+            </span>
+          </label>
+          <input class="model-input" type="email" name="email" id="email" />
 
-            <label class="user-info" for="comment">
-               <span class="input">Комментарий</span>
-            </label>
-            <textarea class="model-tex" name="comment" id="comment" placeholder="Введите текст" rows="5"></textarea>
+          <label class="user-info" for="comment">
+            <span class="input">Комментарий</span>
+          </label>
+          <textarea
+            class="model-tex"
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+            rows="5"
+          ></textarea>
 
-            <div class="checkbox">
-              <input class="checkbox-input" type="checkbox" name="agreement" id="agreement">
-              <label class="agreement" for="agreement">Соглашаюсь с рассылкой и принимаю <a class="contract" href="">Условия договора</a></label>
-            </div>
+          <div class="checkbox">
+            <input class="checkbox-input" type="checkbox" name="agreement" id="agreement" />
+            <label class="agreement" for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="contract" href="">Условия договора</a></label
+            >
+          </div>
 
-              <button class="submit-btn" type="submit">Отправить</button>
-          </form>
-            
-         
+          <button class="submit-btn" type="submit">Отправить</button>
+        </form>
       </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

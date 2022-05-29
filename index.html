@@ -454,16 +454,21 @@
 
         <!-- рассылка -->
 
-        <div class="mailing list">
-          <form>
-            <label for="">
-              <span class="">Подпишитесь на рассылку</span>
-            </label>
-            <input type="text" />
-            <button class="submit">
-              <p>Подписаться</p>
-              <svg width="24px" height="24px">
-                <use href="./img/sprates.svg#icon-telegram"></use>
+        <div class="mailing-list">
+          <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+          <form class="mailing-form">
+            <label class="mailing-label" for="mailing"></label>
+            <input
+              class="mailing-input"
+              name="mailing"
+              type="email"
+              id="mailing"
+              placeholder="E-mail"
+            />
+            <button class="mailing-submit-btn" type="submit">
+              <h3 class="btn-title">Подписаться</h3>
+              <svg class="mailing-iconc" width="24px" height="24px">
+                <use class="mailing-stail" href="./img/sprates.svg#icon-telegram"></use>
               </svg>
             </button>
           </form>
@@ -476,7 +481,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="model-btn">
         <button class="close-btn" data-modal-close>
-          <svg width="30px" height="30px">
+          <svg class="close-iconc" width="30px" height="30px">
             <use href="./img/sprates.svg#icon-close-black"></use>
           </svg>
         </button>

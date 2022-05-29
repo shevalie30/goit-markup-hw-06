@@ -488,50 +488,62 @@
 
         <strong class="model-title">Оставьте свои данные, мы вам перезвоним</strong>
 
-        <form class="model-user" name="model-user" autocomplete="on" novalidate>
-          <label class="user-info" for="name">
-            <span class="input"
-              >Имя
+        <form name="model-user" autocomplete="on" novalidate>
+          <div class="user-info">
+            <label class="model-user" for="name">
+              <span class="input">Имя</span>
+              <input class="model-input" type="text" name="name" id="name" autofocus />
               <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-name"></use>
               </svg>
-            </span>
-          </label>
-          <input class="model-input" type="text" name="name" id="name" autofocus />
+            </label>
+          </div>
 
-          <label class="user-info" for="tel">
-            <span class="input"
-              >Телефон
+          <div class="user-info">
+            <label class="model-user" for="tel">
+              <span class="input">Телефон</span>
+              <input class="model-input" type="tel" name="tel" id="tel" />
               <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-tel"></use>
               </svg>
-            </span>
-          </label>
-          <input class="model-input" type="tel" name="tel" id="tel" />
+            </label>
+          </div>
 
-          <label class="user-info" for="email">
-            <span class="input"
-              >Почта
+          <div class="user-info">
+            <label class="model-user" for="email">
+              <span class="input">Почта</span>
+              <input class="model-input" type="email" name="email" id="email" />
               <svg class="model-iconc" width="18px" height="18px">
                 <use href="./img/sprates.svg#icon-email"></use>
               </svg>
-            </span>
-          </label>
-          <input class="model-input" type="email" name="email" id="email" />
+            </label>
+          </div>
 
-          <label class="user-info" for="comment">
-            <span class="input">Комментарий</span>
-          </label>
-          <textarea
-            class="model-tex"
-            name="comment"
-            id="comment"
-            placeholder="Введите текст"
-            rows="5"
-          ></textarea>
+          <div class="user-textarea">
+            <label class="model-user" for="comment">
+              <span class="input">Комментарий</span>
+            </label>
+            <textarea
+              class="model-tex"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+              rows="5"
+            ></textarea>
+          </div>
 
           <div class="checkbox">
-            <input class="checkbox-input" type="checkbox" name="agreement" id="agreement" />
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            />
+            <span class="custom-checkbox" name="agreement" id="agreement">
+              <svg class="checkbox-iconc" width="11px" height="8px">
+                <use href="./img/sprates.svg#icon-check"></use>
+              </svg>
+            </span>
             <label class="agreement" for="agreement"
               >Соглашаюсь с рассылкой и принимаю
               <a class="contract" href="">Условия договора</a></label

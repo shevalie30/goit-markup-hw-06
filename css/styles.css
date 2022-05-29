@@ -319,6 +319,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.model-user {
+  display: block;
+}
+
 .model-input {
   width: 100%;
   margin: 0;
@@ -326,21 +330,43 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+.model-input:hover,
+.model-input:focus {
+  border: 1px solid #2196f3;
 }
 
 .model-tex {
   width: 100%;
-  margin: 0;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   outline: transparent;
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
-.model-input:not(:last-child) {
+.model-tex:placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--line-height);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.model-tex:hover,
+.model-tex:focus {
+  border: 1px solid #2196f3;
+}
+
+.user-info {
+  position: relative;
   margin-bottom: 10px;
-  height: 40px;
 }
 
 .agreement {
@@ -353,21 +379,30 @@ ul {
   color: #757575;
 }
 
-.user-info {
-  display: block;
-  position: relative;
-  margin-bottom: 4px;
-}
-
 .model-iconc {
   display: block;
   position: absolute;
   top: 28px;
   left: 12px;
+  fill: #212121;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.model-input:hover + .model-iconc,
+.model-input:focus + .model-iconc {
+  fill: #2196f3;
+}
+
+.model-iconc:hover,
+.model-iconc:focus {
+  fill: #2196f3;
 }
 
 .input {
   display: block;
+  margin-bottom: 4px;
 
   font-weight: 400;
   font-size: 12px;
@@ -377,15 +412,61 @@ ul {
   color: #757575;
 }
 
+.user-textarea {
+  margin-bottom: 20px;
+}
+
 .checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.checkbox-input:checked + .custom-checkbox .checkbox-iconc {
+  opacity: 1;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox-input:checked + .custom-checkbox {
+  background-color: #2196f3;
+  outline: #2196f3;
+  transition-property: background-color, outline;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid #2196f3;
+  outline-offset: -2px;
+
+  fill: #ffffff;
+  border: 0.2px solid #ffffff;
+
+  border-radius: 2px;
+  transition-property: fill, outline;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .checkbox-input {
-  align-content: center;
+  opacity: 0;
+}
+
+.checkbox-iconc {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .contract {
@@ -401,9 +482,10 @@ ul {
   width: 200px;
   height: 50px;
 
-  background-color: #188ce8;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 1px solid #2196f3;
 
   font-weight: 700;
   font-size: 16px;
@@ -414,7 +496,7 @@ ul {
 
   outline: transparent;
   cursor: var(--cursor);
-  transition-property: color;
+  transition-property: color, border-radius, border;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -422,6 +504,9 @@ ul {
 .submit-btn:hover,
 .submit-btn:focus {
   color: #ffe602;
+  border: 1px solid #2196f3;
+  border-radius: 0;
+  background-color: #188ce8;
 }
 
 /* кнопка галиреи */
@@ -993,6 +1078,14 @@ ul {
   outline: transparent;
   background-color: transparent;
   color: #ffffff;
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.mailing-input:focus,
+.mailing-input:hover {
+  border: 1px solid #ffffff;
 }
 
 .mailing-submit-btn {

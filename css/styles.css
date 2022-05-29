@@ -1094,15 +1094,6 @@ ul {
 
   padding: 10px 29px;
 
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  outline: transparent;
-  cursor: var(--cursor);
-}
-
-.btn-title {
-  margin-right: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -1111,12 +1102,24 @@ ul {
 
   color: #ffffff;
 
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  cursor: var(--cursor);
+}
+
+/* .btn-title {
+  margin-right: 10px;
+  
+
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
+} */
 
 .mailing-iconc {
+  margin-left: 10px;
   fill: #ffffff;
   outline: transparent;
   transition-property: fill;
@@ -1129,7 +1132,7 @@ ul {
   fill: #ffe602;
 }
 
-.mailing-submit-btn:hover .btn-title,
-.mailing-submit-btn:focus .btn-title {
+.mailing-submit-btn:hover,
+.mailing-submit-btn:focus {
   color: #ffe602;
 }

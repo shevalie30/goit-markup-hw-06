@@ -175,7 +175,7 @@ ul {
 
 .navigation-link-activ::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
   display: block;
@@ -294,6 +294,10 @@ ul {
   cursor: var(--cursor);
 
   outline: transparent;
+
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .close-iconc {
@@ -306,6 +310,11 @@ ul {
 .close-btn:hover .close-iconc,
 .close-btn:focus .close-iconc {
   fill: #2196f3;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  border: 1px solid #2196f3;
 }
 
 .model-title {
@@ -326,7 +335,7 @@ ul {
 .model-input {
   width: 100%;
   margin: 0;
-  padding: 10px 35px;
+  padding: 10px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -334,6 +343,7 @@ ul {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
+
 .model-input:hover,
 .model-input:focus {
   border: 1px solid #2196f3;
@@ -350,7 +360,7 @@ ul {
   transition-timing-function: var(--timing-function);
 }
 
-.model-tex:placeholder {
+.model-tex::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: var(--line-height);
@@ -382,7 +392,7 @@ ul {
 .model-iconc {
   display: block;
   position: absolute;
-  top: 28px;
+  top: 32px;
   left: 12px;
   fill: #212121;
   transition-property: fill;
@@ -424,6 +434,23 @@ ul {
   position: relative;
 }
 
+.visually-hidden {
+  appearance: none;
+}
+
+.checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .checkbox-input:checked + .custom-checkbox .checkbox-iconc {
   opacity: 1;
   transition-duration: var(--duration);
@@ -432,7 +459,7 @@ ul {
 
 .checkbox-input:checked + .custom-checkbox {
   background-color: #2196f3;
-  outline: #2196f3;
+  border: 2px solid #2196f3;
   transition-property: background-color, outline;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
@@ -446,7 +473,7 @@ ul {
   width: 16px;
   height: 15px;
 
-  outline: 2px solid #2196f3;
+  border: 2px solid #212121;
   outline-offset: -2px;
 
   fill: #ffffff;
@@ -456,10 +483,7 @@ ul {
   transition-property: fill, outline;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-}
-
-.checkbox-input {
-  opacity: 0;
+  cursor: var(--cursor);
 }
 
 .checkbox-iconc {
@@ -1107,16 +1131,11 @@ ul {
   border-radius: 4px;
   outline: transparent;
   cursor: var(--cursor);
-}
-
-/* .btn-title {
-  margin-right: 10px;
-  
 
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-} */
+}
 
 .mailing-iconc {
   margin-left: 10px;

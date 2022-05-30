@@ -459,7 +459,7 @@ ul {
 
 .checkbox-input:checked + .custom-checkbox {
   background-color: #2196f3;
-  border: 2px solid #2196f3;
+  outline: 2px solid #2196f3;
   transition-property: background-color, outline;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
@@ -473,7 +473,7 @@ ul {
   width: 16px;
   height: 15px;
 
-  border: 2px solid #212121;
+  outline: 2px solid #212121;
   outline-offset: -2px;
 
   fill: #ffffff;

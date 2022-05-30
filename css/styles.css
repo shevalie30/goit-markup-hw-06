@@ -57,7 +57,7 @@ ul {
 /* шапка */
 
 .header {
-  background: #ffffff;
+  background: var(--brand-color);
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -88,7 +88,7 @@ ul {
 }
 
 .logo-span {
-  color: #ffffff;
+  color: var(--brand-color);
 }
 
 .header-list-link {
@@ -270,7 +270,7 @@ ul {
   width: 528px;
   padding: 40px;
 
-  background-color: #ffffff;
+  background-color: var(--brand-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -288,7 +288,7 @@ ul {
   width: 30px;
   height: 30px;
   padding: 0;
-  background-color: #ffffff;
+  background-color: var(--brand-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: var(--cursor);
@@ -388,7 +388,7 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--team-color);
 }
 
 .model-iconc {
@@ -421,7 +421,7 @@ ul {
   line-height: 14px;
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--team-color);
 }
 
 .user-textarea {
@@ -480,8 +480,8 @@ ul {
   outline: 2px solid #212121;
   outline-offset: -2px;
 
-  fill: #ffffff;
-  border: 0.2px solid #ffffff;
+  fill: var(--brand-color);
+  border: 0.2px solid var(--brand-color);
 
   border-radius: 2px;
   transition-property: fill, outline;
@@ -520,7 +520,7 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--brand-color);
 
   outline: transparent;
   cursor: var(--cursor);
@@ -800,7 +800,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  color: var(--brand-color);
 
   content: '';
   width: 100%;
@@ -825,7 +825,7 @@ ul {
 }
 
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--brand-color);
 }
 
 .team-item-title {
@@ -861,7 +861,7 @@ ul {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--brand-color);
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: var(--duration);
@@ -875,7 +875,7 @@ ul {
 
 .social-link:hover .social-iconc,
 .social-link:focus .social-iconc {
-  fill: #ffffff;
+  fill: var(--brand-color);
 }
 
 .social-iconc {
@@ -1021,7 +1021,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--brand-color);
 }
 
 .footer-list-iconc {
@@ -1045,11 +1045,11 @@ ul {
 
 .item-iconc:hover .svg-iconc,
 .item-iconc:focus .svg-iconc {
-  fill: #ffffff;
+  fill: var(--brand-color);
 }
 
 .svg-iconc {
-  fill: #ffffff;
+  fill: var(--brand-color);
 
   transition-property: fill;
   transition-duration: var(--duration);
@@ -1084,15 +1084,12 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--brand-color);
 }
 
 .mailing-form {
   display: flex;
   align-items: center;
-}
-
-.mailing-label {
 }
 
 .mailing-input {
@@ -1105,7 +1102,7 @@ ul {
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
-  color: #ffffff;
+  color: var(--brand-color);
   transition-property: border;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
@@ -1113,7 +1110,7 @@ ul {
 
 .mailing-input:focus,
 .mailing-input:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--brand-color);
 }
 
 .mailing-submit-btn {
@@ -1128,7 +1125,7 @@ ul {
 
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--brand-color);
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1143,7 +1140,7 @@ ul {
 
 .mailing-iconc {
   margin-left: 10px;
-  fill: #ffffff;
+  fill: var(--brand-color);
   outline: transparent;
   transition-property: fill;
   transition-duration: var(--duration);

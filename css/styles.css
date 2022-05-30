@@ -380,11 +380,13 @@ ul {
 }
 
 .agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-left: 9px;
 
   color: #757575;
 }
@@ -469,6 +471,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-right: 10px;
 
   width: 16px;
   height: 15px;
